@@ -11,7 +11,7 @@ import SwiftUI
 struct TGwing_ApplicationApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainContentView()
         }
     }
 }

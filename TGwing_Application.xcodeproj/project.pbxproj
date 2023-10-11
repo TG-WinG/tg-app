@@ -7,16 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C91E03EC2AD6EDDB00FCDB08 /* MainContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91E03EB2AD6EDDB00FCDB08 /* MainContentView.swift */; };
 		C9BEA02E2AD6E97E001460F1 /* TGwing_ApplicationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9BEA02D2AD6E97E001460F1 /* TGwing_ApplicationApp.swift */; };
-		C9BEA0302AD6E97E001460F1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9BEA02F2AD6E97E001460F1 /* ContentView.swift */; };
 		C9BEA0322AD6E980001460F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9BEA0312AD6E980001460F1 /* Assets.xcassets */; };
 		C9BEA0352AD6E980001460F1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9BEA0342AD6E980001460F1 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C91E03EB2AD6EDDB00FCDB08 /* MainContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainContentView.swift; sourceTree = "<group>"; };
 		C9BEA02A2AD6E97E001460F1 /* TGwing_Application.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TGwing_Application.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9BEA02D2AD6E97E001460F1 /* TGwing_ApplicationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TGwing_ApplicationApp.swift; sourceTree = "<group>"; };
-		C9BEA02F2AD6E97E001460F1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C9BEA0312AD6E980001460F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C9BEA0342AD6E980001460F1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -51,8 +51,8 @@
 		C9BEA02C2AD6E97E001460F1 /* TGwing_Application */ = {
 			isa = PBXGroup;
 			children = (
+				C91E03EB2AD6EDDB00FCDB08 /* MainContentView.swift */,
 				C9BEA02D2AD6E97E001460F1 /* TGwing_ApplicationApp.swift */,
-				C9BEA02F2AD6E97E001460F1 /* ContentView.swift */,
 				C9BEA0312AD6E980001460F1 /* Assets.xcassets */,
 				C9BEA0332AD6E980001460F1 /* Preview Content */,
 			);
@@ -137,8 +137,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C9BEA0302AD6E97E001460F1 /* ContentView.swift in Sources */,
 				C9BEA02E2AD6E97E001460F1 /* TGwing_ApplicationApp.swift in Sources */,
+				C91E03EC2AD6EDDB00FCDB08 /* MainContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
