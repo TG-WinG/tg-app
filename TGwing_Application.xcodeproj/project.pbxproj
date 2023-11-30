@@ -8,17 +8,41 @@
 
 /* Begin PBXBuildFile section */
 		C91E03EC2AD6EDDB00FCDB08 /* MainContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91E03EB2AD6EDDB00FCDB08 /* MainContentView.swift */; };
+		C91E03F02AD7841E00FCDB08 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91E03EF2AD7841E00FCDB08 /* UserData.swift */; };
+		C91E03FB2AD786F500FCDB08 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91E03FA2AD786F500FCDB08 /* LoginView.swift */; };
+		C91E03FD2AD7870600FCDB08 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91E03FC2AD7870600FCDB08 /* SignUpView.swift */; };
 		C9BEA02E2AD6E97E001460F1 /* TGwing_ApplicationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9BEA02D2AD6E97E001460F1 /* TGwing_ApplicationApp.swift */; };
 		C9BEA0322AD6E980001460F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9BEA0312AD6E980001460F1 /* Assets.xcassets */; };
 		C9BEA0352AD6E980001460F1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9BEA0342AD6E980001460F1 /* Preview Assets.xcassets */; };
+		C9D56C322B0C95D6007035FD /* NameInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D56C312B0C95D6007035FD /* NameInputView.swift */; };
+		C9D56C342B0C9A0D007035FD /* IDInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D56C332B0C9A0D007035FD /* IDInputView.swift */; };
+		C9D56C362B0C9B7E007035FD /* PasswordInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D56C352B0C9B7E007035FD /* PasswordInputView.swift */; };
+		C9D56C382B0CDB9C007035FD /* backButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D56C372B0CDB9C007035FD /* backButton.swift */; };
+		C9D56C3B2B0D013A007035FD /* EmailInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D56C3A2B0D013A007035FD /* EmailInputView.swift */; };
+		C9D56C3D2B0EEE84007035FD /* PhoneNumInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D56C3C2B0EEE84007035FD /* PhoneNumInputView.swift */; };
+		C9D56C422B0F4171007035FD /* StatusInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D56C412B0F4171007035FD /* StatusInputView.swift */; };
+		C9D56C442B0F96AF007035FD /* Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D56C432B0F96AF007035FD /* Example.swift */; };
+		C9D56C472B173177007035FD /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D56C462B173177007035FD /* ProfileView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C91E03EB2AD6EDDB00FCDB08 /* MainContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainContentView.swift; sourceTree = "<group>"; };
+		C91E03EF2AD7841E00FCDB08 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
+		C91E03FA2AD786F500FCDB08 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		C91E03FC2AD7870600FCDB08 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		C9BEA02A2AD6E97E001460F1 /* TGwing_Application.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TGwing_Application.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9BEA02D2AD6E97E001460F1 /* TGwing_ApplicationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TGwing_ApplicationApp.swift; sourceTree = "<group>"; };
 		C9BEA0312AD6E980001460F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C9BEA0342AD6E980001460F1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C9D56C312B0C95D6007035FD /* NameInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameInputView.swift; sourceTree = "<group>"; };
+		C9D56C332B0C9A0D007035FD /* IDInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDInputView.swift; sourceTree = "<group>"; };
+		C9D56C352B0C9B7E007035FD /* PasswordInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordInputView.swift; sourceTree = "<group>"; };
+		C9D56C372B0CDB9C007035FD /* backButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = backButton.swift; path = ../../../../../../../../Documents/backButton.swift; sourceTree = "<group>"; };
+		C9D56C3A2B0D013A007035FD /* EmailInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailInputView.swift; sourceTree = "<group>"; };
+		C9D56C3C2B0EEE84007035FD /* PhoneNumInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumInputView.swift; sourceTree = "<group>"; };
+		C9D56C412B0F4171007035FD /* StatusInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusInputView.swift; sourceTree = "<group>"; };
+		C9D56C432B0F96AF007035FD /* Example.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example.swift; sourceTree = "<group>"; };
+		C9D56C462B173177007035FD /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +56,57 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C91E03F22AD785F100FCDB08 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				C9D56C452B173168007035FD /* Profile */,
+				C9D56C2E2B0BC439007035FD /* Cells */,
+				C91E03F92AD786CA00FCDB08 /* Login */,
+				C91E03F72AD7869000FCDB08 /* SignUp */,
+				C91E03F42AD7862000FCDB08 /* Data */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		C91E03F32AD7860000FCDB08 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				C9BEA02D2AD6E97E001460F1 /* TGwing_ApplicationApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		C91E03F42AD7862000FCDB08 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				C91E03EF2AD7841E00FCDB08 /* UserData.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		C91E03F72AD7869000FCDB08 /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				C91E03FC2AD7870600FCDB08 /* SignUpView.swift */,
+				C9D56C312B0C95D6007035FD /* NameInputView.swift */,
+				C9D56C332B0C9A0D007035FD /* IDInputView.swift */,
+				C9D56C352B0C9B7E007035FD /* PasswordInputView.swift */,
+				C9D56C3A2B0D013A007035FD /* EmailInputView.swift */,
+				C9D56C3C2B0EEE84007035FD /* PhoneNumInputView.swift */,
+				C9D56C412B0F4171007035FD /* StatusInputView.swift */,
+				C9D56C432B0F96AF007035FD /* Example.swift */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		C91E03F92AD786CA00FCDB08 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				C91E03FA2AD786F500FCDB08 /* LoginView.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
 		C9BEA0212AD6E97E001460F1 = {
 			isa = PBXGroup;
 			children = (
@@ -51,8 +126,9 @@
 		C9BEA02C2AD6E97E001460F1 /* TGwing_Application */ = {
 			isa = PBXGroup;
 			children = (
+				C91E03F32AD7860000FCDB08 /* App */,
+				C91E03F22AD785F100FCDB08 /* Core */,
 				C91E03EB2AD6EDDB00FCDB08 /* MainContentView.swift */,
-				C9BEA02D2AD6E97E001460F1 /* TGwing_ApplicationApp.swift */,
 				C9BEA0312AD6E980001460F1 /* Assets.xcassets */,
 				C9BEA0332AD6E980001460F1 /* Preview Content */,
 			);
@@ -65,6 +141,22 @@
 				C9BEA0342AD6E980001460F1 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C9D56C2E2B0BC439007035FD /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				C9D56C372B0CDB9C007035FD /* backButton.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		C9D56C452B173168007035FD /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				C9D56C462B173177007035FD /* ProfileView.swift */,
+			);
+			path = Profile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +175,8 @@
 			dependencies = (
 			);
 			name = TGwing_Application;
+			packageProductDependencies = (
+			);
 			productName = TGwing_Application;
 			productReference = C9BEA02A2AD6E97E001460F1 /* TGwing_Application.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +205,8 @@
 				Base,
 			);
 			mainGroup = C9BEA0212AD6E97E001460F1;
+			packageReferences = (
+			);
 			productRefGroup = C9BEA02B2AD6E97E001460F1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,7 +233,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9D56C3B2B0D013A007035FD /* EmailInputView.swift in Sources */,
+				C9D56C382B0CDB9C007035FD /* backButton.swift in Sources */,
+				C9D56C362B0C9B7E007035FD /* PasswordInputView.swift in Sources */,
+				C9D56C442B0F96AF007035FD /* Example.swift in Sources */,
+				C9D56C422B0F4171007035FD /* StatusInputView.swift in Sources */,
+				C9D56C3D2B0EEE84007035FD /* PhoneNumInputView.swift in Sources */,
 				C9BEA02E2AD6E97E001460F1 /* TGwing_ApplicationApp.swift in Sources */,
+				C91E03FD2AD7870600FCDB08 /* SignUpView.swift in Sources */,
+				C9D56C322B0C95D6007035FD /* NameInputView.swift in Sources */,
+				C91E03F02AD7841E00FCDB08 /* UserData.swift in Sources */,
+				C91E03FB2AD786F500FCDB08 /* LoginView.swift in Sources */,
+				C9D56C342B0C9A0D007035FD /* IDInputView.swift in Sources */,
+				C9D56C472B173177007035FD /* ProfileView.swift in Sources */,
 				C91E03EC2AD6EDDB00FCDB08 /* MainContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,6 +380,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"TGwing_Application/Preview Content\"";
+				DEVELOPMENT_TEAM = YFVKZW9898;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -300,6 +409,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"TGwing_Application/Preview Content\"";
+				DEVELOPMENT_TEAM = YFVKZW9898;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
