@@ -13,6 +13,11 @@ struct LoginView: View {
     @State private var showPassword = false
     @State private var startAnimation: Bool = false
     @State private var isLinkActive = false
+    @FocusState private var focusField: Field?
+    
+    enum Field: Hashable {
+        case name, area, menu, review
+    }
     
     var body: some View {
         NavigationStack {
@@ -38,6 +43,9 @@ struct LoginView: View {
                             .foregroundColor(Color.white)
                             .background(RoundedRectangle(cornerRadius: 10).stroke(Color.white, lineWidth: 2))
                             .padding(.horizontal, 36)
+                            .onTapGesture {
+                                focusField = .review
+                            }
                         // Password
                         ZStack {
                             HStack {
@@ -48,6 +56,9 @@ struct LoginView: View {
                                         .padding(19.2)
                                         .cornerRadius(10)
                                         .foregroundColor(Color.white)
+                                        .onTapGesture {
+                                            focusField = .review
+                                        }
                                     Button(action: { self.showPassword.toggle()}) {
                                         Image(systemName: "eye")
                                             .foregroundStyle(Color(.white))
@@ -60,6 +71,9 @@ struct LoginView: View {
                                         .padding(20)
                                         .cornerRadius(10)
                                         .foregroundColor(Color.white)
+                                        .onTapGesture {
+                                            focusField = .review
+                                        }
                                     Button(action: { self.showPassword.toggle()}) {
                                         Image(systemName: "eye.slash")
                                             .foregroundStyle(Color(.white))
@@ -110,6 +124,7 @@ struct LoginView: View {
         .onTapGesture {
             hideKeyboard()
         }
+        .toolbar(.hidden, for: .tabBar)
     }
 }
 

@@ -6,3 +6,14 @@
 //
 
 import Foundation
+
+struct ProfileData {
+    var username : String
+    let studentID : String
+    var email : String
+    var phoneNumber : String
+    var status : String
+    var semester : String
+    var role : String
+    var profileImagePath : String
+}

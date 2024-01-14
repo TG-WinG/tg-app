@@ -13,6 +13,12 @@ struct PasswordInputView: View {
     @State private var showPassword = false
     @State private var showPasswordCh = false
     @State private var isLinkActive = false
+    @FocusState private var focusField: Field?
+    
+    enum Field: Hashable {
+        case name, area, menu, review
+    }
+    
 
     var body: some View {
         NavigationStack {
@@ -43,7 +49,11 @@ struct PasswordInputView: View {
                                         .font(.system(size: 16, design: .rounded))
                                         .padding(19.2)
                                         .cornerRadius(10)
+                                        .contentShape(Rectangle())
                                         .foregroundColor(Color.white)
+                                        .onTapGesture {
+                                            focusField = .review
+                                        }
                                     Button(action: { self.showPassword.toggle()}) {
                                         Image(systemName: "eye")
                                             .foregroundStyle(Color(.white))
@@ -56,6 +66,10 @@ struct PasswordInputView: View {
                                         .padding(20)
                                         .cornerRadius(10)
                                         .foregroundColor(Color.white)
+                                        .contentShape(Rectangle())
+                                        .onTapGesture {
+                                            focusField = .review
+                                        }
                                     Button(action: { self.showPassword.toggle()}) {
                                         Image(systemName: "eye.slash")
                                             .foregroundStyle(Color(.white))
@@ -78,6 +92,10 @@ struct PasswordInputView: View {
                                         .padding(19.2)
                                         .cornerRadius(10)
                                         .foregroundColor(Color.white)
+                                        .contentShape(Rectangle())
+                                        .onTapGesture {
+                                            focusField = .review
+                                        }
                                     Button(action: { self.showPasswordCh.toggle()}) {
                                         Image(systemName: "eye")
                                             .foregroundStyle(Color(.white))
@@ -90,6 +108,10 @@ struct PasswordInputView: View {
                                         .padding(20)
                                         .cornerRadius(10)
                                         .foregroundColor(Color.white)
+                                        .contentShape(Rectangle())
+                                        .onTapGesture {
+                                            focusField = .review
+                                        }
                                     Button(action: { self.showPasswordCh.toggle()}) {
                                         Image(systemName: "eye.slash")
                                             .foregroundStyle(Color(.white))

@@ -12,7 +12,7 @@ extension View {
     UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
   }
 }
- 
+
 struct MainContentView: View {
     var body: some View {
         TabView {
@@ -20,9 +20,13 @@ struct MainContentView: View {
                 .tabItem {
                     Image(systemName: "house")
                 }
+            PostView()
+                .tabItem {
+                    Image(systemName: "doc.plaintext")
+                }
             ProfileView()
                 .tabItem {
-                    Image(systemName: "person")
+                    Image(systemName: "person.circle")
                 }
         }
         .accentColor(.black)

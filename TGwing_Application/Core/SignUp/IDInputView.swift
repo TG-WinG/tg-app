@@ -11,6 +11,11 @@ struct IDInputView: View {
     @State private var id = ""
     @State private var isLinkActive = false
     @State private var idInputed = true
+    @FocusState private var focusField: Field?
+    
+    enum Field: Hashable {
+        case name, area, menu, review
+    }
     
     var body: some View {
         NavigationStack {
@@ -51,6 +56,10 @@ struct IDInputView: View {
                                     .background(RoundedRectangle(cornerRadius: 10).stroke(Color.white, lineWidth: 2))
                                     .padding(.horizontal, 47)
                                     .padding(.bottom, 15)
+                                    .contentShape(Rectangle())
+                                    .onTapGesture{
+                                        focusField = .review
+                                    }
                                 .keyboardType(.numberPad)
                             } else {
                                 TextField("학번을 입력해주세요", text: $id, prompt: Text("학번을 입력해주세요 !").foregroundColor(Color.red.opacity(0.6)))
@@ -62,6 +71,10 @@ struct IDInputView: View {
                                     .background(RoundedRectangle(cornerRadius: 10).stroke(Color.red, lineWidth: 2))
                                     .padding(.horizontal, 47)
                                     .padding(.bottom, 15)
+                                    .contentShape(Rectangle())
+                                    .onTapGesture{
+                                        focusField = .review
+                                    }
                                 .keyboardType(.numberPad)
                             }
                         }

@@ -11,7 +11,12 @@ struct NameInputView: View {
     @State private var name = ""
     @State private var isLinkActive = false
     @State private var nameInputed = true
+    @FocusState private var focusField: Field?
 //    @State private var keyboardHeight: CGFloat = 540
+    
+    enum Field: Hashable {
+        case name, area, menu, review
+    }
     
     var body: some View {
             NavigationStack {
@@ -44,6 +49,10 @@ struct NameInputView: View {
                                         .foregroundColor(Color.white)
                                         .background(RoundedRectangle(cornerRadius: 10).stroke(Color.white, lineWidth: 2))
                                         .padding(.horizontal, 47)
+                                        .contentShape(Rectangle())
+                                        .onTapGesture{
+                                            focusField = .review
+                                        }
                                     .padding(.bottom, 15)
                                 } else {
                                     TextField("이름을 입력해주세요", text: $name, prompt: Text("이름을 입력해주세요 !").foregroundColor(Color.red.opacity(0.6)))
@@ -54,6 +63,10 @@ struct NameInputView: View {
                                         .foregroundColor(Color.white)
                                         .background(RoundedRectangle(cornerRadius: 10).stroke(Color.red, lineWidth: 2))
                                         .padding(.horizontal, 47)
+                                        .contentShape(Rectangle())
+                                        .onTapGesture{
+                                            focusField = .review
+                                        }
                                     .padding(.bottom, 15)
                                 }
                             }
@@ -88,6 +101,7 @@ struct NameInputView: View {
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .onTapGesture {
                 hideKeyboard()
+                
             }
     }
 }
