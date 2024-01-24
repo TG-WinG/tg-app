@@ -7,13 +7,9 @@
 
 import Foundation
 
-struct Post {
-    var id : Int
+struct Post : Identifiable {
+    let id = UUID()
     var title : String
-    var image : String
+    var image : URL
     var writedTime : String
-}
-
-struct Posts {
-    var postList = [Post]()
 }

@@ -16,7 +16,10 @@ extension View {
 struct MainContentView: View {
     var body: some View {
         TabView {
-            Text("Main Page")
+            ZStack {
+                Color.black.opacity(0.9).ignoresSafeArea()
+                Text("Main Page").foregroundColor(.white)
+            }
                 .tabItem {
                     Image(systemName: "house")
                 }
@@ -29,7 +32,7 @@ struct MainContentView: View {
                     Image(systemName: "person.circle")
                 }
         }
-        .accentColor(.black)
+        .accentColor(.white)
     }
 }
 
