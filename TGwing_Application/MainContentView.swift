@@ -20,7 +20,7 @@ struct MainContentView: View {
                 Color.black.opacity(0.9).ignoresSafeArea()
                 Text("Main Page").foregroundColor(.white)
             }
-                .tabItem {
+                .tabItem { 
                     Image(systemName: "house")
                 }
             PostView()

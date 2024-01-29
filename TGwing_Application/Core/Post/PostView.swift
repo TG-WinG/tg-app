@@ -7,20 +7,20 @@
 
 import SwiftUI
 
-extension View {
-    @available(iOS 14, *)
-    func navigationBarTitleTextColor(_ color: Color) -> some View {
-        let uiColor = UIColor(color)
-        
-        UINavigationBar.appearance().titleTextAttributes = [.foregroundColor: uiColor]
-        UINavigationBar.appearance().largeTitleTextAttributes = [.foregroundColor: uiColor]
-        
-        return self
-    }
-}
-
 struct PostView: View {
     @ObservedObject var viewModel = PostListViewmodel()
+    
+    init() {
+        let appearance = UINavigationBarAppearance()
+        
+        appearance.titleTextAttributes = [NSAttributedString.Key.foregroundColor : UIColor.white]
+        appearance.largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor : UIColor.white]
+        appearance.backgroundColor = UIColor(Color.black.opacity(0.85))
+        
+        UINavigationBar.appearance().scrollEdgeAppearance = appearance
+        UINavigationBar.appearance().standardAppearance = appearance
+        
+    }
     
     var body: some View {
         NavigationView {
@@ -38,10 +38,13 @@ struct PostView: View {
                     }
                     .listRowSeparatorTint(.white)
                 }
-                .navigationBarTitle("티지윙 공지사항", displayMode: .inline)
-                .navigationBarTitleTextColor(Color.white)
+                .navigationBarTitle(Text("티지윙 공지사항"), displayMode: .inline)
                 .background(.black.opacity(0.9))
                 .scrollContentBackground(.hidden)
+                .navigationBarItems(trailing: NavigationLink(destination: Text("검색 창")){
+                    Image(systemName: "magnifyingglass").resizable()
+                        .foregroundColor(.white)
+                })
             }
     }
 }
