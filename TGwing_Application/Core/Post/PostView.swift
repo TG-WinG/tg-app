@@ -15,7 +15,7 @@ struct PostView: View {
         
         appearance.titleTextAttributes = [NSAttributedString.Key.foregroundColor : UIColor.white]
         appearance.largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor : UIColor.white]
-        appearance.backgroundColor = UIColor(Color.black.opacity(0.85))
+        appearance.backgroundColor = UIColor(Color.black.opacity(0.87))
         
         UINavigationBar.appearance().scrollEdgeAppearance = appearance
         UINavigationBar.appearance().standardAppearance = appearance
@@ -26,26 +26,28 @@ struct PostView: View {
         NavigationView {
                 List {
                     ForEach(viewModel.posts) { post in
-                        ZStack {
-                            PostListCell(post: post)
-                            NavigationLink {
-                                Text("PostView")
-                            } label: {
-                                EmptyView()
-                            }.opacity(0.0)
+                            ZStack {
+                                PostListCell(post: post)
+                                NavigationLink {
+                                    PostDetailView()
+                                } label: {
+                                    EmptyView()
+                                }.opacity(0.0)
+                            }
+                            .listRowInsets(EdgeInsets())
+                            .listRowBackground(Color.gray.opacity(0.01))
                         }
-                        .listRowBackground(Color.gray.opacity(0.01))
-                    }
-                    .listRowSeparatorTint(.white)
                 }
+                .padding(.top, 15)
+                .listStyle(PlainListStyle())
                 .navigationBarTitle(Text("티지윙 공지사항"), displayMode: .inline)
                 .background(.black.opacity(0.9))
                 .scrollContentBackground(.hidden)
                 .navigationBarItems(trailing: NavigationLink(destination: Text("검색 창")){
                     Image(systemName: "magnifyingglass").resizable()
                         .foregroundColor(.white)
-                })
-            }
+            })
+        }
     }
 }
 

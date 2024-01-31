@@ -44,11 +44,12 @@ struct ProfileView: View {
                     .padding(.bottom, 20)
                     
                     HStack {
-                        Image(ViewModel.ProfileData.profileImagePath)
+                        Image(systemName: "person.circle.fill")
                             .resizable()
                             .scaledToFill()
                             .frame(width: 80, height: 80)
                             .clipShape(Circle())
+                            .foregroundColor(.gray)
                         ZStack {
                             HStack {
                                 if (isLogined){
@@ -70,7 +71,7 @@ struct ProfileView: View {
                                     NavigationLink {
                                         
                                     } label: {
-                                        Image(systemName: "greaterthan")
+                                        Image(systemName: "chevron.right")
                                             .foregroundColor(.white)
                                             .frame(width: 35, height: 80)
                                     }

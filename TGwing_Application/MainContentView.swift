@@ -14,6 +14,12 @@ extension View {
 }
 
 struct MainContentView: View {
+    
+    init(){
+        UITabBar.appearance().barTintColor = UIColor(Color.black)
+        
+    }
+    
     var body: some View {
         TabView {
             ZStack {
@@ -21,15 +27,24 @@ struct MainContentView: View {
                 Text("Main Page").foregroundColor(.white)
             }
                 .tabItem { 
-                    Image(systemName: "house")
+                    VStack {
+                        Image(systemName: "house")
+                        Text("Home")
+                    }
                 }
             PostView()
                 .tabItem {
-                    Image(systemName: "doc.plaintext")
+                    VStack {
+                        Image(systemName: "doc.plaintext")
+                        Text("Notice")
+                    }
                 }
             ProfileView()
                 .tabItem {
-                    Image(systemName: "person.circle")
+                    VStack {
+                        Image(systemName: "person.circle")
+                        Text("Profile")
+                    }
                 }
         }
         .accentColor(.white)

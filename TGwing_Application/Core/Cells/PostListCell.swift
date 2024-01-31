@@ -11,23 +11,27 @@ struct PostListCell: View {
     @State var post : Post
     
     var body: some View {
-        ZStack {
+        VStack {
+            Rectangle()
+                .frame(height: 1)
+                .foregroundStyle(Color.gray)
+                .padding(.horizontal, 10)
+                .padding(.bottom, 10)
             HStack {
-                VStack (alignment: .leading) {
-                    Text(post.title)
-                        .fontWeight(.semibold)
-                        .frame(width: 250, height: 15, alignment: .leading)
-                        .foregroundColor(.white)
-                        .padding(.bottom, 20)
-                    Text(" \(post.writedTime)")
-                        .foregroundColor(.white)
-                        .font(.system(size: 10))
-                }
-                .padding(.trailing, 30)
-                VStack (alignment: .trailing) {
+                    VStack (alignment: .leading) {
+                        Text(post.title)
+                            .fontWeight(.semibold)
+                            .frame(width: 250, height: 15, alignment: .leading)
+                            .foregroundColor(.white)
+                            .padding(.bottom, 20)
+                        Text(" \(post.writedTime)")
+                            .foregroundColor(.white)
+                            .font(.system(size: 12))
+                    }
+                    .padding(.trailing, 35)
                     UrlImageView(url: post.image)
-                }
             }
+            .padding(.bottom, 15)
         }
     }
 }

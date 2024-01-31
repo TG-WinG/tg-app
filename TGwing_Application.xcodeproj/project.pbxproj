@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C902B5002B6AA74F00F1B139 /* PostDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C902B4FF2B6AA74F00F1B139 /* PostDetailView.swift */; };
 		C91E03EC2AD6EDDB00FCDB08 /* MainContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91E03EB2AD6EDDB00FCDB08 /* MainContentView.swift */; };
 		C91E03F02AD7841E00FCDB08 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91E03EF2AD7841E00FCDB08 /* UserData.swift */; };
 		C91E03FB2AD786F500FCDB08 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91E03FA2AD786F500FCDB08 /* LoginView.swift */; };
@@ -33,6 +34,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C902B4FF2B6AA74F00F1B139 /* PostDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailView.swift; sourceTree = "<group>"; };
 		C91E03EB2AD6EDDB00FCDB08 /* MainContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainContentView.swift; sourceTree = "<group>"; };
 		C91E03EF2AD7841E00FCDB08 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
 		C91E03FA2AD786F500FCDB08 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
@@ -184,6 +186,7 @@
 				C9FABF212B542FEF0048187B /* PostView.swift */,
 				C9EFED242B5435F7004C4B3C /* PostData.swift */,
 				C96740862B604EF200093C01 /* PostViewmodel.swift */,
+				C902B4FF2B6AA74F00F1B139 /* PostDetailView.swift */,
 			);
 			path = Post;
 			sourceTree = "<group>";
@@ -273,6 +276,7 @@
 				C9BEA02E2AD6E97E001460F1 /* TGwing_ApplicationApp.swift in Sources */,
 				C91E03FD2AD7870600FCDB08 /* SignUpView.swift in Sources */,
 				C9FABF1A2B5417020048187B /* ProfileData.swift in Sources */,
+				C902B5002B6AA74F00F1B139 /* PostDetailView.swift in Sources */,
 				C9FABF222B542FEF0048187B /* PostView.swift in Sources */,
 				C9D56C322B0C95D6007035FD /* NameInputView.swift in Sources */,
 				C96740872B604EF200093C01 /* PostViewmodel.swift in Sources */,
