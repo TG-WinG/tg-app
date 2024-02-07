@@ -13,11 +13,10 @@ struct UrlImageView: View {
     var body: some View {
         AsyncImage(url: url) { image in
             image.resizable()
+            .aspectRatio(contentMode: .fit)
         } placeholder: {
             ProgressView()
         }
-        .frame(width: 60, height: 60)
-        .cornerRadius(8)
     }
 }
 

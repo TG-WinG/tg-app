@@ -30,6 +30,8 @@ struct PostListCell: View {
                     }
                     .padding(.trailing, 35)
                     UrlImageView(url: post.image)
+                        .frame(width: 60, height: 60)
+                        .cornerRadius(8)
             }
             .padding(.bottom, 15)
         }
