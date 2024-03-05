@@ -16,14 +16,14 @@ struct PostListCell: View {
                 .frame(height: 1)
                 .foregroundStyle(Color.gray)
                 .padding(.horizontal, 10)
-                .padding(.bottom, 10)
+                .padding(.bottom, 5)
             HStack {
                     VStack (alignment: .leading) {
                         Text(post.title)
                             .fontWeight(.semibold)
                             .frame(width: 250, height: 15, alignment: .leading)
                             .foregroundColor(.white)
-                            .padding(.bottom, 20)
+                            .padding(.bottom, 5)
                         Text(" \(post.writedTime)")
                             .foregroundColor(.white)
                             .font(.system(size: 12))
@@ -33,7 +33,7 @@ struct PostListCell: View {
                         .frame(width: 60, height: 60)
                         .cornerRadius(8)
             }
-            .padding(.bottom, 15)
+            .padding(.bottom, 10)
         }
     }
 }
