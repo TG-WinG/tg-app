@@ -7,6 +7,19 @@
 
 import SwiftUI
 
+// Swipe-Back
+extension UINavigationController: ObservableObject, UIGestureRecognizerDelegate {
+    override open func viewDidLoad() {
+        super.viewDidLoad()
+        // activate code
+        interactivePopGestureRecognizer?.delegate = self
+    }
+
+    public func gestureRecognizerShouldBegin(_ gestureRecognizer: UIGestureRecognizer) -> Bool {
+        return viewControllers.count > 1
+    }
+}
+
 struct PostView: View {
     @ObservedObject var viewModel = PostListViewmodel()
     
@@ -19,7 +32,6 @@ struct PostView: View {
         
         UINavigationBar.appearance().scrollEdgeAppearance = appearance
         UINavigationBar.appearance().standardAppearance = appearance
-        
     }
     
     var body: some View {
@@ -45,6 +57,7 @@ struct PostView: View {
                 .scrollContentBackground(.hidden)
                 .navigationBarItems(trailing: NavigationLink(destination: Text("검색 창")){
                     Image(systemName: "magnifyingglass").resizable()
+                        .frame(width: 20, height: 20)
                         .foregroundColor(.white)
             })
         }

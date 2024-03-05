@@ -22,11 +22,8 @@ struct MainContentView: View {
     
     var body: some View {
         TabView {
-            ZStack {
-                Color.black.opacity(0.9).ignoresSafeArea()
-                Text("Main Page").foregroundColor(.white)
-            }
-                .tabItem { 
+            HomeView()
+                .tabItem {
                     VStack {
                         Image(systemName: "house")
                         Text("Home")
