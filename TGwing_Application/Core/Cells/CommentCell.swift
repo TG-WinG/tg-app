@@ -10,9 +10,9 @@ import SwiftUI
 struct CommentCell: View {
     var body: some View {
         ZStack {
-            Color.black.opacity(0.9).ignoresSafeArea()
+//            Color.black.opacity(0.9).ignoresSafeArea()
             HStack {
-                    VStack (alignment: .leading) {
+                VStack (alignment: .leading) {
                         HStack {
                             Image(systemName: "person.circle.fill")
                                 .resizable()
@@ -24,16 +24,19 @@ struct CommentCell: View {
                                 .font(.system(size: 15))
                                 .foregroundColor(.white)
                         }
-                        .padding(.bottom, 3)
+                        .padding(.vertical, 3)
                         Text("응 안가~")
                             .font(.system(size: 14))
                             .foregroundColor(.white)
-                            .padding(.bottom, 4)
+                            .padding(.bottom, 3)
+                            .frame(width: .infinity)
                         Text("2024.03.04")
                             .foregroundColor(.white)
                             .font(.system(size: 12))
-                    }
-                    .padding(.trailing, 35)
+                            .padding(.bottom, 3)
+                }
+                .padding(.leading, 20)
+                Spacer()
             }
         }
     }

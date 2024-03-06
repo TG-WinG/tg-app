@@ -107,7 +107,7 @@ struct StatusInputView: View {
             .scrollDisabled(true)
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .background(Color.black
-                .opacity(0.85).ignoresSafeArea())
+                .opacity(0.9).ignoresSafeArea())
         }
         .navigationBarBackButtonHidden(true)
         .navigationBarItems(leading: backButton())

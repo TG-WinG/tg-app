@@ -156,7 +156,7 @@ struct PasswordInputView: View {
             }
             .scrollDisabled(true)
             .background(Color.black
-                .opacity(0.85)
+                .opacity(0.9)
                 .ignoresSafeArea())
         }
         .navigationBarBackButtonHidden(true)

@@ -60,6 +60,7 @@ struct PostDetailView: View {
                     Rectangle()
                         .frame(height: 3)
                     // 댓글 창
+                    CommentCell()
                 }
             }
             .navigationBarItems(leading: backButton())

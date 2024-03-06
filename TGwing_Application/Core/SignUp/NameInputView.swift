@@ -94,7 +94,7 @@ struct NameInputView: View {
                 }
                 .scrollDisabled(true)
                 .background(Color.black
-                    .opacity(0.85).ignoresSafeArea())
+                    .opacity(0.9).ignoresSafeArea())
             }
             .navigationBarBackButtonHidden(true)
             .navigationBarItems(leading: backButton())

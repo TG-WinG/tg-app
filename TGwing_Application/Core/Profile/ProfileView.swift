@@ -42,7 +42,7 @@ struct ProfileView: View {
                         }
                     }
                     .padding(.bottom, 20)
-                    
+                    .padding(.top, 5)
                     HStack {
                         Image(systemName: "person.circle.fill")
                             .resizable()
@@ -90,8 +90,14 @@ struct ProfileView: View {
                             }
                         }
                     }
+                    Spacer()
+                    NavigationLink {
+                        LoginView()
+                    } label: {
+                        Text("로그인 창")
+                            .padding(.bottom, 10)
+                    }
                 }
-                .padding(.bottom, 560)
             }
         }
     }

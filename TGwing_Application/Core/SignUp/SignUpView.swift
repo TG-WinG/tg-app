@@ -21,7 +21,7 @@ struct SignUpView: View {
         NavigationStack {
             ZStack {
                 Color.black
-                    .opacity(0.85)
+                    .opacity(0.9)
                     .ignoresSafeArea()
                 VStack {
                     Text("Sign up to T.G.WinG")
