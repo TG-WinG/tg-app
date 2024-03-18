@@ -1,17 +1,13 @@
 //
-//  ProfileView.swift
+//  toLoginView.swift
 //  TGwing_Application
 //
-//  Created by 양진영 on 11/29/23.
+//  Created by 양진영 on 3/18/24.
 //
 
 import SwiftUI
 
-struct ProfileView: View {
-    @ObservedObject var ViewModel = ProfileViewModel(username: "양진영", studentID: "2022100000", email: "user1@khu.ac.kr", phoneNumber: "010-1234-5678", status: "휴학", semester: "2-2", role: " ", profileImagePath: "basicImage")
-    
-    @State var isLogined = false
-    
+struct toLoginView: View {
     var body: some View {
         NavigationStack{
             ZStack {
@@ -50,7 +46,6 @@ struct ProfileView: View {
                             .frame(width: 80, height: 80)
                             .clipShape(Circle())
                             .foregroundColor(.gray)
-                            .padding(.leading, 25)
                         ZStack {
                             HStack {
                                 if (isLogined){
@@ -68,35 +63,36 @@ struct ProfileView: View {
                                             .font(.system(size: 14))
                                     }
                                     .padding(.leading, 10)
-                                    Spacer()
+                                    .padding(.trailing, 120)
                                     NavigationLink {
-                                        // 프로필 수정 View
+                                        // 프로필 수정
                                     } label: {
                                         Image(systemName: "chevron.right")
                                             .foregroundColor(.white)
                                             .frame(width: 35, height: 80)
-                                            .padding(.trailing, 10)
                                     }
                                 }
                                 else {
                                     NavigationLink {
                                         LoginView()
                                     } label: {
-                                        Text("로그인해주세요")
+                                        Text("로그인해주세요                            >")
                                             .foregroundColor(.white)
-                                            .padding(.leading, 10)
-                                            .fontWeight(.semibold)
-                                        Spacer()
-                                        Image(systemName: "chevron.right")
-                                            .foregroundColor(.white)
-                                            .frame(width: 35, height: 80)
-                                            .padding(.trailing, 10)
+                                            .frame(width: 240, height: 80, alignment: .leading)
                                     }
+                                    .padding(.leading, 16)
+                                    .padding(.trailing, 0)
                                 }
                             }
                         }
                     }
                     Spacer()
+                    NavigationLink {
+                        LoginView()
+                    } label: {
+                        Text("로그인 창")
+                            .padding(.bottom, 10)
+                    }
                 }
             }
         }
@@ -104,6 +100,5 @@ struct ProfileView: View {
 }
 
 #Preview {
-    ProfileView()
+    toLoginView()
 }
-

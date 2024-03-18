@@ -16,6 +16,8 @@
 		C96740872B604EF200093C01 /* PostViewmodel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96740862B604EF200093C01 /* PostViewmodel.swift */; };
 		C96740892B6117C800093C01 /* PostListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96740882B6117C800093C01 /* PostListCell.swift */; };
 		C967408B2B6118F500093C01 /* UrlImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C967408A2B6118F500093C01 /* UrlImageView.swift */; };
+		C98795FD2BA8793400D4E00D /* PostDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98795FC2BA8793400D4E00D /* PostDetailModel.swift */; };
+		C98795FF2BA87A1B00D4E00D /* PostDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98795FE2BA87A1B00D4E00D /* PostDetailViewModel.swift */; };
 		C9BEA02E2AD6E97E001460F1 /* TGwing_ApplicationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9BEA02D2AD6E97E001460F1 /* TGwing_ApplicationApp.swift */; };
 		C9BEA0322AD6E980001460F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9BEA0312AD6E980001460F1 /* Assets.xcassets */; };
 		C9BEA0352AD6E980001460F1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9BEA0342AD6E980001460F1 /* Preview Assets.xcassets */; };
@@ -46,6 +48,8 @@
 		C96740862B604EF200093C01 /* PostViewmodel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewmodel.swift; sourceTree = "<group>"; };
 		C96740882B6117C800093C01 /* PostListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListCell.swift; sourceTree = "<group>"; };
 		C967408A2B6118F500093C01 /* UrlImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlImageView.swift; sourceTree = "<group>"; };
+		C98795FC2BA8793400D4E00D /* PostDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailModel.swift; sourceTree = "<group>"; };
+		C98795FE2BA87A1B00D4E00D /* PostDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailViewModel.swift; sourceTree = "<group>"; };
 		C9BEA02A2AD6E97E001460F1 /* TGwing_Application.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TGwing_Application.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9BEA02D2AD6E97E001460F1 /* TGwing_ApplicationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TGwing_ApplicationApp.swift; sourceTree = "<group>"; };
 		C9BEA0312AD6E980001460F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -131,6 +135,26 @@
 			path = Login;
 			sourceTree = "<group>";
 		};
+		C98796002BA87CF600D4E00D /* PostList */ = {
+			isa = PBXGroup;
+			children = (
+				C9FABF212B542FEF0048187B /* PostView.swift */,
+				C9EFED242B5435F7004C4B3C /* PostData.swift */,
+				C96740862B604EF200093C01 /* PostViewmodel.swift */,
+			);
+			path = PostList;
+			sourceTree = "<group>";
+		};
+		C98796012BA87D0500D4E00D /* PostDetail */ = {
+			isa = PBXGroup;
+			children = (
+				C98795FC2BA8793400D4E00D /* PostDetailModel.swift */,
+				C902B4FF2B6AA74F00F1B139 /* PostDetailView.swift */,
+				C98795FE2BA87A1B00D4E00D /* PostDetailViewModel.swift */,
+			);
+			path = PostDetail;
+			sourceTree = "<group>";
+		};
 		C9BEA0212AD6E97E001460F1 = {
 			isa = PBXGroup;
 			children = (
@@ -200,10 +224,8 @@
 		C9FABF1E2B542FC90048187B /* Post */ = {
 			isa = PBXGroup;
 			children = (
-				C9FABF212B542FEF0048187B /* PostView.swift */,
-				C9EFED242B5435F7004C4B3C /* PostData.swift */,
-				C96740862B604EF200093C01 /* PostViewmodel.swift */,
-				C902B4FF2B6AA74F00F1B139 /* PostDetailView.swift */,
+				C98796012BA87D0500D4E00D /* PostDetail */,
+				C98796002BA87CF600D4E00D /* PostList */,
 			);
 			path = Post;
 			sourceTree = "<group>";
@@ -292,6 +314,7 @@
 				C9D56C3D2B0EEE84007035FD /* PhoneNumInputView.swift in Sources */,
 				C9BEA02E2AD6E97E001460F1 /* TGwing_ApplicationApp.swift in Sources */,
 				C91E03FD2AD7870600FCDB08 /* SignUpView.swift in Sources */,
+				C98795FD2BA8793400D4E00D /* PostDetailModel.swift in Sources */,
 				C9FABF1A2B5417020048187B /* ProfileData.swift in Sources */,
 				C902B5002B6AA74F00F1B139 /* PostDetailView.swift in Sources */,
 				C9FABF222B542FEF0048187B /* PostView.swift in Sources */,
@@ -304,6 +327,7 @@
 				C9FABF1C2B5417E60048187B /* ProfileViewModel.swift in Sources */,
 				C91E03EC2AD6EDDB00FCDB08 /* MainContentView.swift in Sources */,
 				C9F15C072B972C4C00D13474 /* HomeView.swift in Sources */,
+				C98795FF2BA87A1B00D4E00D /* PostDetailViewModel.swift in Sources */,
 				C9F15C092B984F6200D13474 /* PhotoGrid.swift in Sources */,
 				C967408B2B6118F500093C01 /* UrlImageView.swift in Sources */,
 				C91E7DAA2B7415A5008E074C /* CommentCell.swift in Sources */,

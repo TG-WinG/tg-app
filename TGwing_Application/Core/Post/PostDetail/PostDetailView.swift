@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct PostDetailView: View {
+    @ObservedObject var viewModel = PostViewmodel()
+    
     var body: some View {
         ZStack {
             Color.black.opacity(0.9)
@@ -32,13 +34,13 @@ struct PostDetailView: View {
                             .padding(.bottom, 5)
                         }
                         // 글 제목 부분
-                        Text("티지윙 개강총회 공지 🎉")
+                        Text(viewModel.post.title)
                             .fontWeight(.bold)
                             .font(.system(size: 18))
                             .padding(.bottom, 7)
                             .foregroundColor(.white)
                         // 글 내용 부분
-                        Text("🔥티지윙 개강총회🔥\n24-1 개강총회 일정입니다.\n\n⏳일시: 2024.03.14(목) 오후 6시\n✅장소: 전자정보대학(강의실 대여 예정)\n✅뒷풀이 장소: 경성주막\n회비: 12,000원\n\n개총 장소는 강의실 대여 후 추후 공지할 예정이며, 개총 회비 납부는 따로 방만들어서 공지할 예정입니다!\n\n안오면 찾아갑니다")
+                        Text(viewModel.post.content)
                             .frame(maxWidth: .infinity, alignment: .leading)
                             .padding(.bottom, 10)
                             .foregroundColor(.white)
@@ -50,11 +52,18 @@ struct PostDetailView: View {
                                 .cornerRadius(8)
                                 .padding(.bottom, 4)
                         }
-                        // 작성 날짜
-                        Text("2024년 3월 2일 (토) 17:43")
-                            .font(.caption)
-                            .foregroundColor(.gray)
-                            .padding(.bottom, 5)
+                        HStack {
+                            // 작성 날짜
+                            Text(viewModel.post.writedTime)
+                                .font(.caption)
+                                .foregroundColor(.gray)
+                            Spacer()
+                            // 조회수
+                            Text("조회수: \(viewModel.post.views)")
+                                .font(.caption)
+                                .foregroundColor(.gray)
+                        }
+                        .padding(.bottom, 5)
                     }
                     .padding(.horizontal, 20)
                     Rectangle()
