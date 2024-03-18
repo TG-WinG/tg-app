@@ -54,6 +54,7 @@
 		C9BEA02D2AD6E97E001460F1 /* TGwing_ApplicationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TGwing_ApplicationApp.swift; sourceTree = "<group>"; };
 		C9BEA0312AD6E980001460F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C9BEA0342AD6E980001460F1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C9D380CF2BA895D80038D13C /* TGwing-Application-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "TGwing-Application-Info.plist"; sourceTree = SOURCE_ROOT; };
 		C9D56C312B0C95D6007035FD /* NameInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameInputView.swift; sourceTree = "<group>"; };
 		C9D56C332B0C9A0D007035FD /* IDInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDInputView.swift; sourceTree = "<group>"; };
 		C9D56C352B0C9B7E007035FD /* PasswordInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordInputView.swift; sourceTree = "<group>"; };
@@ -174,6 +175,7 @@
 		C9BEA02C2AD6E97E001460F1 /* TGwing_Application */ = {
 			isa = PBXGroup;
 			children = (
+				C9D380CF2BA895D80038D13C /* TGwing-Application-Info.plist */,
 				C91E03F32AD7860000FCDB08 /* App */,
 				C91E03F22AD785F100FCDB08 /* Core */,
 				C91E03EB2AD6EDDB00FCDB08 /* MainContentView.swift */,
@@ -469,6 +471,8 @@
 				DEVELOPMENT_TEAM = YFVKZW9898;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "TGwing-Application-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = TGwinG;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -498,6 +502,8 @@
 				DEVELOPMENT_TEAM = YFVKZW9898;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "TGwing-Application-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = TGwinG;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
